@@ -7,5 +7,11 @@
   var key='pomodoro-desk.entries.v1';
   try{source.value=localStorage.getItem(key)||'';}catch(ignore){}
   source.oninput=function(){try{localStorage.setItem(key,source.value);}catch(ignore){}};
+  document.getElementById('export').onclick=function(){
+    try{var blob=new Blob([JSON.stringify(Project.analyze(source.value),null,2)],{type:'application/json'});
+      var url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download='pomodoro-desk-export.json';link.click();
+      setTimeout(function(){URL.revokeObjectURL(url);},1000);
+    }catch(error){result.textContent='Cannot export: '+error.message;}
+  };
   document.getElementById('clear').onclick=function(){source.value='';result.textContent='';try{localStorage.removeItem(key);}catch(ignore){}};
 }());
