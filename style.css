@@ -2,5 +2,6 @@
 main{max-width:860px;margin:5vh auto;padding:2rem;background:white;border:1px solid #dde2e8;border-radius:8px}
 header{margin-bottom:2rem}h1{margin:0;font-size:1.8rem}header p{color:#55616f}
 label{display:block;font-weight:600;margin-bottom:.5rem}textarea{width:100%;padding:.85rem;border:1px solid #b3bdc7;border-radius:4px;font:14px/1.5 monospace}
+.hint{font-size:.85rem;color:#657281;margin:0 0 1rem}
 button{background:#324b79;color:white;border:0;border-radius:4px;padding:.65rem 1rem;cursor:pointer;margin:.7rem .35rem .7rem 0}
 button:focus,textarea:focus{outline:2px solid #9db4db}pre{white-space:pre-wrap;word-break:break-word;background:#f0f4f9;padding:1rem;min-height:60px}
