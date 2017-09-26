@@ -13,5 +13,6 @@
       setTimeout(function(){URL.revokeObjectURL(url);},1000);
     }catch(error){result.textContent='Cannot export: '+error.message;}
   };
+  source.onkeydown=function(event){if((event.ctrlKey||event.metaKey)&&event.keyCode===13){document.getElementById('analyze').click();}};
   document.getElementById('clear').onclick=function(){source.value='';result.textContent='';try{localStorage.removeItem(key);}catch(ignore){}};
 }());
