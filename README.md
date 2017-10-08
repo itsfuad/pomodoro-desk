@@ -11,3 +11,7 @@ Open `index.html` in a browser and paste your entries. Click **Analyze** to insp
 Run `node tests.js && node tests-edge.js` for the data-engine tests. No runtime dependencies.
 
 Press Ctrl+Enter (Cmd+Enter on macOS) to analyze without reaching for the mouse.
+
+## Maintenance
+
+Version 0.2 includes a small usability improvement and additional coverage for everyday workflows. No network dependencies are required.
